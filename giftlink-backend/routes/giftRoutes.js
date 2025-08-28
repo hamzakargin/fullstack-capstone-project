@@ -35,7 +35,7 @@ router.get('/:id', async (req, res) => {
         const id = req.params.id;
 
         // Task 3: Find a specific gift by ID using the collection.findOne method and store in constant called gift
-        const gift = await collection.findOne({ id })
+        const gift = await collection.findOne({ id }); // <-- Buraya noktalı virgül eklendi
 
         if (!gift) {
             return res.status(404).send('Gift not found');
@@ -47,8 +47,6 @@ router.get('/:id', async (req, res) => {
         res.status(500).send('Error fetching gift');
     }
 });
-
-
 
 // Add a new gift
 router.post('/', async (req, res, next) => {
