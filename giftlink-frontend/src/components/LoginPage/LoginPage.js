@@ -101,7 +101,7 @@ function LoginPage() {
                         </div>
                         <button className="btn btn-primary w-100 mb-3" onClick={handleLogin}>Login</button>
                         <p className="mt-4 text-center">
-                            New here? <a href="/app/register" className="text-primary">Register Here</a>
+                            New here? <a href="/app/register" className="text-primary">Registerr Here</a>
                         </p>
                     </div>
                 </div>
